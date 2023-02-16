@@ -4,9 +4,10 @@ const Footer = () => {
   return (
     <div className="mainnav">
     <nav className="footer">
-      <Link to="/" className="navbar-item">Home</Link>
-      <span> | </span>
-      <Link to="/populardrinks" className="navbar-item">Popular</Link>
+      <div className="footermenu">
+      <Link to="/" className="footer-link">Home</Link><br></br>
+      <Link to="/populardrinks" className="footer-link">Popular</Link>
+      </div>
     </nav>
     </div>
   );
