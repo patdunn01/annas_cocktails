@@ -48,5 +48,8 @@
   "bugs": {
     "url": "https://github.com/patdunn01/annas_cocktails/issues"
   },
-  "homepage": "https://patdunn01.github.io/"
+  "homepage": "https://patdunn01.github.io/",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
