@@ -13,31 +13,137 @@ code {
 }
 
 .header{
-  padding: 5px;
-  background-color: #F5A33D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
   color: #393B4D;
 }
 
+.header img{
+  width: 12rem;
+}
+
+.header h1{
+  align-content: left;
+  font-family: 'Inconsolata', monospace;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.blank{
+  opacity: 0;
+}
+
 .navbar{
-  background-color: #CF4344;
-  padding: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px #000000 solid;
+  background-color: #ffffff;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
-.navbar-item{
+
+.first-navbar-item{
+  margin-right: 1rem;
   text-decoration: none;
-  color:#ffffff
+  color: #393B4D;
 }
 
+.navbar-item{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #393B4D;
+}
 
-.drinks-list-container{
-  background-color: #8DAEBA;
+.searchbar{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #393B4D;
+  border:#000000 0.1rem solid;
+  border-radius: 3rem;
+}
+
+.home-page-main-img-container{
+  background-color: #ffffff;
+  max-height: 45rem;
+  overflow: hidden;
+  clip-path: inset(10% 0 10% 0);
+}
+
+.home-page-main-img {
+  width: 90vw;
+  height: auto;
+  -webkit-filter: sepia(30%) grayscale(10%);
+}
+
+.bio{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #393b4d78;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.Anna-icon {
+  margin-left: 5vw;
+  width: 10rem;
+  border-radius: 10rem;
+  border: solid 12px #CF4344;
+}
+
+.bio p {
+  margin-right: 5vw;
+  color:#ffffff;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.home-page-drinks-list-container{
+  background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+
+.home-page-drinksListItem{
+  list-style: none;
+  margin: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center; /* center the content within the item */
+  align-items: center; /* center the content vertically within the item */
+}
+
+.home-page-drinksListItem h3{
+  margin-left: 1rem;
+}
+
+.drinks-list-container{
+  background-color: #393b4d78;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .drinksListItem{
   list-style: none;
-  margin: 28px;
+  margin: 2rem;
+  display: flex;
+  justify-content: center; /* center the content within the item */
+  align-items: center; /* center the content vertically within the item */
+}
+
+.drinksListItem h3{
+  margin-left: 1rem;
 }
 
 .drinksListItem p{
@@ -47,13 +153,15 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+  text-align: center;
 }
 
 .drinksListItem:hover p{
   opacity: 1;
+  transition: opacity 1.2s linear;
 }
 
-.drinksListItem:hover {
+.drinksListItem img:hover {
   filter: brightness(0.60);
   cursor: pointer;
   transition: border 0.8s, filter 1.2s linear;
@@ -73,4 +181,103 @@ code {
 
 .cocktailImages_wrap:hover{
   color: #ffffff;
+}
+
+.single-drink-container{
+  list-style: none;
+  background-color: #8DAEBA;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.singleDrink{
+  display: flex;
+  justify-content: center;
+}
+
+.singleCocktailImage{
+  width: 20rem;
+  border-radius: 50rem;
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-color: #393B4D;
+  height: 10rem;
+}
+
+.footermenu{
+  margin-left: 5vw;
+  justify-content: center;
+  width: 5rem;
+  text-align: left;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+
+  .header img{
+    display: none;
+  }
+
+  .mainnav{
+    margin-top: 1rem;
+  }
+
+  .navbar{
+    flex-direction: column;
+    background-color: #ffffff40;
+    margin-top: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
+  .first-navbar-item{
+    margin-right: 0.2rem;
+    text-decoration: none;
+  }
+
+  .navbar-item{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+
+  .searchbar {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+
+  .home-page-main-img {
+    width: 140vw;
+  }
+
+  .bio{
+    flex-direction: column;
+  }
+
+  .Anna-icon {
+    width: 10rem;
+    border-width: 0.3rem;
+  }
+
+  .drinks-list-container{
+    justify-content: left;
+    flex-direction: column;
+  }
+  
+  .cocktailImages{
+    text-align: left;
+    max-width: 10rem;
+    border: solid 1rem #CF4344;
+    border-radius: 450px;
+  }
+
 }

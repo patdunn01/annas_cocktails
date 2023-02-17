@@ -11,7 +11,7 @@ const PopularDrinks = () => {
     headers: {
       "X-RapidAPI-Key": "93fc287a6fmsh8a27ec8e4a750e3p1a7c1ejsn6c5636fd3568",
       "X-RapidAPI-Host": "the-cocktail-db.p.rapidapi.com",
-    },
+    }
   };
   useEffect(() => {
     axios
@@ -32,7 +32,7 @@ const PopularDrinks = () => {
         <ul className="drinks-list-container">
           {drinksData.map((drink) => {
             return (
-              <div key={drink.idDrink}>
+              <div>
                 <li className="drinksListItem">
                   <div className="cocktailImages_wrap">
                   <img
