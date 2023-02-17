@@ -1,6 +1,7 @@
 import Karolina1 from "../Images/pexels-karolina-grabowska-4021872.jpg";
 import Anna from "../Images/Anna1.jpg";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -63,12 +64,13 @@ const Home = () => {
               <div>
                 <li className="home-page-drinksListItem">
                   <div className="cocktailImages_wrap">
+                  <Link  to={`/singleDrink/${drink.idDrink}`} className="navbar-item">
                   <img
                     className="cocktailImages"
                     src={drink.strDrinkThumb}
                     alt="Cocktail"
                   />
-                  
+                  </Link>
                   </div>
                   <h3>{drink.strDrink}</h3>
                 </li>

@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const PopularDrinks = () => {
@@ -35,15 +36,17 @@ const PopularDrinks = () => {
               <div>
                 <li className="drinksListItem">
                   <div className="cocktailImages_wrap">
+                  <Link  to={`/singleDrink/${drink.idDrink}`} className="navbar-item">
                   <img
                     className="cocktailImages"
                     src={drink.strDrinkThumb}
                     alt="Cocktail"
                   />
+                  </Link>
                   <p>{drink.strIngredient1}, {drink.strIngredient2} and {drink.strIngredient3}</p>
                   </div>
-                  <h3>{drink.strDrink}</h3>
                 </li>
+                  <h3>{drink.strDrink}</h3>
               </div>
             );
           })}
