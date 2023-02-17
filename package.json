@@ -1,5 +1,6 @@
 {
-  
+  "name": "annas-cocktail-site",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -47,7 +48,5 @@
   "bugs": {
     "url": "https://github.com/patdunn01/annas_cocktails/issues"
   },
-  "homepage": "https://patdunn01.github.io/",
-  "name": "annas_cocktails",
-  "version": "0.1.0"
+  "homepage": "https://patdunn01.github.io/annas_cocktails/"
 }
