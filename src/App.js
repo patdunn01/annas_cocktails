@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Nav />
       <Routes>
-      <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/populardrinks" element={<PopularDrinks />} />
         <Route path="/randomCocktail" element={<RandomCocktail />} />
         <Route path="/singleDrink/:idDrink" element={<Single />} />
