@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/annas_cocktails/static/css/main.cbb738c1.css",
-    "main.js": "/annas_cocktails/static/js/main.87ccf5fc.js",
+    "main.js": "/annas_cocktails/static/js/main.3ae9e2f0.js",
     "static/media/pexels-karolina-grabowska-4021872.jpg": "/annas_cocktails/static/media/pexels-karolina-grabowska-4021872.f78a1ceb0cc5123ea946.jpg",
     "static/media/Anna1.jpg": "/annas_cocktails/static/media/Anna1.ff07b879ab6cdd615d0d.jpg",
     "static/media/CocktailLogo.svg": "/annas_cocktails/static/media/CocktailLogo.77ab98ac79f044ae807309de70d029f3.svg",
     "index.html": "/annas_cocktails/index.html",
     "main.cbb738c1.css.map": "/annas_cocktails/static/css/main.cbb738c1.css.map",
-    "main.87ccf5fc.js.map": "/annas_cocktails/static/js/main.87ccf5fc.js.map"
+    "main.3ae9e2f0.js.map": "/annas_cocktails/static/js/main.3ae9e2f0.js.map"
   },
   "entrypoints": [
     "static/css/main.cbb738c1.css",
-    "static/js/main.87ccf5fc.js"
+    "static/js/main.3ae9e2f0.js"
   ]
 }
