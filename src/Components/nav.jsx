@@ -10,7 +10,7 @@ const Nav = () => {
       
       <Link to="/randomCocktail" className="navbar-item">Something Different</Link>
       
-      <Link to="/randomCocktail" className="navbar-item">Blog</Link>
+      <Link to="/blog" className="navbar-item">Blog</Link>
       
       <Link to="/randomCocktail" className="navbar-item">Tickets</Link>
       
