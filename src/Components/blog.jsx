@@ -5,26 +5,10 @@ import { useState, useEffect } from "react";
 const Blog = () => {
   const [drinksData, setDrinks] = useState([]);
 
-  const options = {
-    method: "GET",
-    url: "https://the-cocktail-db.p.rapidapi.com/popular.php",
-    params: { c: "list" },
-    headers: {
-      "X-RapidAPI-Key": "93fc287a6fmsh8a27ec8e4a750e3p1a7c1ejsn6c5636fd3568",
-      "X-RapidAPI-Host": "the-cocktail-db.p.rapidapi.com",
-    }
-  };
-  useEffect(() => {
-    axios
-      .request(options)
-      .then((response) => {
-        console.log(response.data);
-        setDrinks(response.data.drinks);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-  }, []);
+  fetch('https://api.render.com/deploy/srv-cfprsjh4rebfdavgi3fg?key=Vq6lRYERKdQ/api/')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
 
   return (
     <header>
