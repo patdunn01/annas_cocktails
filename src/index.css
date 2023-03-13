@@ -178,7 +178,6 @@ code {
   border-radius: 450px;
 }
 
-
 .cocktailImages_wrap:hover{
   color: #ffffff;
 }
@@ -203,24 +202,27 @@ code {
 
 .footer{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   color: white;
   background-color: #393B4D;
-  height: 10rem;
-}
-
-.footermenu{
-  margin-left: 5vw;
-  justify-content: center;
-  width: 5rem;
-  text-align: left;
+  height: 7rem;
 }
 
 .footer-link {
+  padding-bottom: 2vh;
+  border-bottom: 0.1px white solid;
+  margin: 5vh;
   text-decoration: none;
   color: white;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.subFooter{
+  background-color: #393B4D;
+  height: 3rem;
+  border-top: 1px black solid;
 }
 
 @media screen and (max-width: 400px) {

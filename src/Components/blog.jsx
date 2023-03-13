@@ -5,10 +5,13 @@ import { useState, useEffect } from "react";
 const Blog = () => {
   const [drinksData, setDrinks] = useState([]);
 
-  fetch('https://api.render.com/deploy/srv-cfprsjh4rebfdavgi3fg?key=Vq6lRYERKdQ/api/')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
+  axios.get('https://api.render.com/deploy/srv-cfprsjh4rebfdavgi3fg?key=Vq6lRYERKdQ/')
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.log(error);
+  });
 
   return (
     <header>

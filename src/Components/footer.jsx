@@ -4,10 +4,12 @@ const Footer = () => {
   return (
     <div className="mainnav">
     <nav className="footer">
-      <div className="footermenu">
-      <Link to="/" className="footer-link">Home</Link><br></br>
+      <Link to="/" className="footer-link">Home</Link>
       <Link to="/populardrinks" className="footer-link">Popular</Link>
-      </div>
+      <Link to="/populardrinks" className="footer-link">Story</Link>
+      <Link to="/populardrinks" className="footer-link">Cookies</Link>
+      <Link to="/populardrinks" className="footer-link">Privacy</Link>
+      <Link to="/populardrinks" className="footer-link">Terms & Conditions</Link>
     </nav>
     </div>
   );

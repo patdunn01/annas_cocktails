@@ -6,6 +6,7 @@ import PopularDrinks from './Components/populardrinks'
 import RandomCocktail from './Components/randomCocktail'
 import Single from './Components/singleDrink'
 import Footer from './Components/footer'
+import SubFooter from './Components/subFooter'
 import Blog from './Components/blog'
 import { Route, Routes } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
+      <SubFooter />
     </div>
   );
 }

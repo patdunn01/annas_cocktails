@@ -21,7 +21,6 @@ const Home = () => {
     axios
       .request(options)
       .then((response) => {
-        console.log(response.data, "hello");
         setDrinks(response.data.drinks);
       })
       .catch(function (error) {
