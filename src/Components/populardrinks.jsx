@@ -36,7 +36,7 @@ const PopularDrinks = () => {
               <div>
                 <li className="drinksListItem">
                   <div className="cocktailImages_wrap">
-                  <Link  to={`/singleDrink/${drink.idDrink}`} className="navbar-item">
+                  <Link  to={`/singleDrink/${drink.idDrink}`} className="drink-list">
                   <img
                     className="cocktailImages"
                     src={drink.strDrinkThumb}
@@ -46,7 +46,7 @@ const PopularDrinks = () => {
                   <p>{drink.strIngredient1}, {drink.strIngredient2} and {drink.strIngredient3}</p>
                   </div>
                 </li>
-                  <h3>{drink.strDrink}</h3>
+                  <h3 className="drink-name">{drink.strDrink}</h3>
               </div>
             );
           })}
@@ -58,3 +58,8 @@ const PopularDrinks = () => {
 };
 
 export default PopularDrinks;
+
+
+//teachable 
+//c# fundamentals
+//c# pathway 

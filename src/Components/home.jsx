@@ -65,7 +65,7 @@ const Home = () => {
                   <div className="cocktailImages_wrap">
                   <Link  to={`/singleDrink/${drink.idDrink}`} className="navbar-item">
                   <img
-                    className="cocktailImages"
+                    className="homeCocktailImages"
                     src={drink.strDrinkThumb}
                     alt="Cocktail"
                   />
