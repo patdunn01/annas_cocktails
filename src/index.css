@@ -83,9 +83,17 @@ opacity: 0.8; /* Reduce opacity slightly on hover */
   border-radius: 3rem;
 }
 
+.favourites{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
 .home-page-main-img-container{
   background-color: #ffffff;
-  max-height: 45rem;
+  max-height: auto;
   overflow: hidden;
   clip-path: inset(10% 0 10% 0);
 }
@@ -120,41 +128,27 @@ opacity: 0.8; /* Reduce opacity slightly on hover */
   margin-left: 2rem;
 }
 
-.home-page-drinks-list-container{
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: nowrap;
-  text-align: center;
-  flex-wrap: wrap;
-}
 
 .home-page-drinksListItem{
-  max-width: auto;
-  width: 58vh;
+  width: auto;
   list-style: none;
-  margin-top: 1.5rem;
   display: flex;
+  margin: 2vw;
   flex-flow: column;
-  justify-content: center; /* center the content within the item */
-  align-items: center; /* center the content vertically within the item */
-}
-
-.homeCocktailImages{
-  max-width: 50vh;
-  border: solid 12px #CF4344;
-  border-radius: 450px;
-}
-
-.drinks-list-container{
-  background-color: #393b4d78;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
 }
 
+.homeCocktailImages{
+  max-width: 30vh;
+  border: solid 12px #CF4344;
+  border-radius: 150px;
+}
+
+.home-drink-list {
+  text-decoration: none;
+  color: #393B4D;
+}
 .drinksListItem{
   list-style: none;
   margin: 2rem;
@@ -163,44 +157,40 @@ opacity: 0.8; /* Reduce opacity slightly on hover */
   align-items: center; /* center the content vertically within the item */
 }
 
-.drink-list {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: #393B4D;
-  }
-
-.drinksListItem h3{
-  margin-left: 1rem;
-}
-
-.drinksListItem p{
-  color: white;
-  position: absolute;
-  top: 47%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+.drinks-list-container{
+  background-color: #393b4d78;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.drinksListItem:hover p{
+.drinksListItem{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.drinksListItem p{
+  opacity: 0.2;
+  color:white; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.drinksListItem p:hover{
   opacity: 1;
-  transition: opacity 1.2s linear;
 }
 
 .drinksListItem img:hover {
   filter: brightness(0.60);
   cursor: pointer;
   transition: border 0.8s, filter 1.2s linear;
-}
-
-.cocktailImages_wrap{
-  position: relative;
-  text-align: center;
-}
-
-.cocktailImages_wrap:hover{
-  color: #ffffff;
 }
 
 .cocktailImages{
@@ -213,13 +203,8 @@ opacity: 0.8; /* Reduce opacity slightly on hover */
   border: solid 1em #cf4343c4;
 }
 
-.cocktailImages_wrap p{
-  pointer-events: none;
-}
-
-.drink-name{
-  padding-bottom: 3vh;
-  border-bottom: 1px solid black;
+.drinksListItem h3{
+  opacity: 1;
 }
 
 .single-drink-container{

@@ -29,29 +29,27 @@ const PopularDrinks = () => {
   return (
     <header>
       <h1>Popular Cocktails</h1>
-      <div>
-        <ul className="drinks-list-container">
+        <div className="drinks-list-container">
           {drinksData.map((drink) => {
             return (
-              <div>
-                <li className="drinksListItem">
-                  <div className="cocktailImages_wrap">
-                  <Link  to={`/singleDrink/${drink.idDrink}`} className="drink-list">
+                <li className="drinksListItem"> {/* blue */}
+                  
+                  <Link  to={`/singleDrink/${drink.idDrink}`}> {/* cyan */}
                   <img
-                    className="cocktailImages"
+                    className="cocktailImages" /* #CF4344 */
                     src={drink.strDrinkThumb}
                     alt="Cocktail"
-                  />
+                    />
+                    <p>{drink.strIngredient1}, {drink.strIngredient2} and {drink.strIngredient3}</p>
                   </Link>
-                  <p>{drink.strIngredient1}, {drink.strIngredient2} and {drink.strIngredient3}</p>
-                  </div>
+                  
+                  <h3>{drink.strDrink}</h3> {/* green */}
                 </li>
-                  <h3 className="drink-name">{drink.strDrink}</h3>
-              </div>
+              
             );
           })}
-        </ul>
-      </div>
+        </div>
+      
     </header>
   );
 

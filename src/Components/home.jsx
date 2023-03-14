@@ -55,31 +55,25 @@ const Home = () => {
           <br/><br/><strong>Anna, founder and cocktail maniac</strong> 
           </p>
       </div>
-      <div>
-        <ul className="home-page-drinks-list-container">
+      <div className="favourites"> {/* pink */}
           {drinksData.map((drink) => {
             if(drink.strDrink==="Negroni" || drink.strDrink==="Old Fashioned" || drink.strDrink==="Mojito"){
             return (
-              <div>
-                <li className="home-page-drinksListItem">
-                  <div className="cocktailImages_wrap">
-                  <Link  to={`/singleDrink/${drink.idDrink}`} className="navbar-item">
-                  <img
-                    className="homeCocktailImages"
-                    src={drink.strDrinkThumb}
-                    alt="Cocktail"
-                  />
-                  </Link>
-                  </div>
-                  <h3>{drink.strDrink}</h3>
-                </li>
-              </div>
+              <li className="home-page-drinksListItem">
+                  {/* green */}
+                    <Link  to={`/singleDrink/${drink.idDrink}`} className="home-drink-list"> {/* blue */}
+                    <img
+                      className="homeCocktailImages"
+                      src={drink.strDrinkThumb}
+                      alt="Cocktail"
+                    />
+                    </Link>
+                    <h3>{drink.strDrink}</h3>
+              </li>
             );
           }})}
-        </ul>
       </div>
-      </div>
-    
+    </div>
   );
 };
 
