@@ -92,14 +92,15 @@ opacity: 0.8; /* Reduce opacity slightly on hover */
 }
 
 .home-page-main-img-container{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   background-color: #ffffff;
-  max-height: auto;
+  max-height: 90vh;
   overflow: hidden;
-  clip-path: inset(10% 0 10% 0);
 }
-
 .home-page-main-img {
-  width: 90vw;
+  /* clip-path: inset(0 0 40vh 0); */
+  width: 100vw;
   height: auto;
   -webkit-filter: sepia(30%) grayscale(10%);
 }
