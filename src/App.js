@@ -17,6 +17,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/annas_cocktails" element={<Home />} />
+        
         <Route path="/populardrinks" element={<PopularDrinks />} />
         <Route path="/randomCocktail" element={<RandomCocktail />} />
         <Route path="/singleDrink/:idDrink" element={<Single />} />
